@@ -2,7 +2,6 @@
 
 import { getActiveMedia, getPlaceholder } from "@/actions/mediaActions";
 import Image from "next/image";
-import Link from "next/link";
 import { useEffect, useState } from "react";
 
 export default function ViewPage() {

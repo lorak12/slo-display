@@ -6,7 +6,6 @@ import { DataTableColumnHeader } from "@/components/ui/data-table-column-header"
 import { ColumnDef } from "@tanstack/react-table";
 import { Edit, Power } from "lucide-react";
 import Link from "next/link";
-import { useRouter } from "next/navigation";
 
 export type Media = {
   id: string;

@@ -1,3 +1,4 @@
+import { Media } from "../columns";
 import MediaForm from "./MediaForm";
 import { getMediaById } from "@/actions/mediaActions";
 
@@ -7,7 +8,7 @@ export default async function Page(props: { params: Params }) {
   const data = await getMediaById(params.mediaId);
   return (
     <div>
-      <MediaForm initialData={data as any} />
+      <MediaForm initialData={data as Media} />
     </div>
   );
 }

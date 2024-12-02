@@ -1,5 +1,3 @@
-import { createMedia } from "@/actions/mediaActions";
-import prisma from "@/lib/prisma";
 import { createUploadthing, type FileRouter } from "uploadthing/next";
 
 const f = createUploadthing();
@@ -15,7 +13,7 @@ export const MainFileRouter = {
     audio: {
       maxFileSize: "64MB",
     },
-  }).onUploadComplete(async ({ metadata, file }) => {
+  }).onUploadComplete(async ({ file }) => {
     return file;
   }),
 } satisfies FileRouter;

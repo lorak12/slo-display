@@ -5,7 +5,7 @@ import { DataTable } from "@/components/ui/data-table";
 import supabase from "@/lib/supabase";
 import { UploadButton } from "@/lib/uploadthing";
 import { useEffect, useState } from "react";
-import { columns, Media } from "./columns";
+import { columns } from "./columns";
 
 export default function Client({
   initialData,
