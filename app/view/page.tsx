@@ -41,7 +41,11 @@ export default function ViewPage() {
         <Image fill src={activeMedia.url} alt="Active Media" />
       )}
       {activeMedia.type === "VIDEO" && (
-        <video autoPlay src={activeMedia.url} className="max-h-screen"></video>
+        <video
+          autoPlay
+          src={activeMedia.url}
+          className="max-h-screen fixed top-0 left-0 w-full h-full"
+        ></video>
       )}
       {activeMedia.type === "AUDIO" && (
         <div className="text-center text-white">
