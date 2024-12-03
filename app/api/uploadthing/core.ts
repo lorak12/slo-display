@@ -8,7 +8,7 @@ export const MainFileRouter = {
       maxFileSize: "64MB",
     },
     video: {
-      maxFileSize: "64MB",
+      maxFileSize: "512MB",
     },
     audio: {
       maxFileSize: "64MB",

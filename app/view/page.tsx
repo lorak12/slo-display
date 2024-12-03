@@ -36,7 +36,7 @@ export default function ViewPage() {
   }
 
   return (
-    <div className="flex items-center justify-center min-h-screen bg-black relative">
+    <div className="flex items-center justify-center min-h-screen bg-black">
       {activeMedia.type === "IMAGE" && (
         <Image fill src={activeMedia.url} alt="Active Media" />
       )}
